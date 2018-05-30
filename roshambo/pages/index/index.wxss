@@ -1,0 +1,44 @@
+/**index.wxss**/
+.showView{
+  display: flex;
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+}
+.winOrLost{
+  flex: 1;
+}
+.gestureImg{
+  flex: 1;
+}
+.gestureImg image{
+  width: 30px;
+  height: 30px;
+}
+/*选择出拳*/
+.choose-wrapper{
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+}
+.choose{
+  display: flex;
+  margin-top: 30px;
+}
+.choose-item{
+  flex: 1;
+}
+.choose-item image{
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 50%;
+}
+.play{
+  margin-top: 30px;
+  width: 70%;
+}
+/*选中状态*/
+.choose .choosed{
+  background: greenyellow;
+}
