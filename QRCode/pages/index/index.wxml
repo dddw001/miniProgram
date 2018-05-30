@@ -1,0 +1,12 @@
+<!--pages/index/index.wxml-->
+ <view class='container-box'>
+  <form>
+    <view class='input-row'>
+      <input type='text' placeholder='请输入' bindinput='handleInput'/>
+    </view>
+    <button form-type='submit' type='primary' bindtap='handleCreate'>生成二维码</button>
+  </form>
+  <view class='img-box'>
+     <canvas canvas-id='myCanvas' style='width:686rpx;height:686rpx;background:#f1f1f1;margin:0 auto;'></canvas> 
+  </view>
+</view> 

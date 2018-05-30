@@ -1,0 +1,8 @@
+/* pages/index/index.wxss */
+.input-row{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.img-box{
+  margin-top: 20px;
+}
