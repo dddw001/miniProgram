@@ -1,0 +1,22 @@
+<!--pages/movies/movies.wxml-->
+<import src='movie-list/movie-list' />
+<import src='movie-grid/movie-grid' />
+<view class='search'>
+  <icon type='search' class='search-img' size='13' color='#405f80'></icon>
+  <input type='text' placeholder='奇葩朵朵、张若昀' placeholder-class='placeholder' bindconfirm='handleChange' bindfocus='handleFocus'/>
+  <image class='xx-img' src='/resources/images/icon/xx.png' wx:if='{{searchPanelShow}}' bindtap='handleCancel'></image>
+</view>
+<view class='container' wx:if='{{containerShow}}'>
+  <view>
+    <template is='movieList' data='{{...inTheaters}}'/>
+  </view>
+  <view>
+    <template is='movieList' data='{{...comingSoon}}'/>
+  </view>
+  <view>
+    <template is='movieList' data='{{...top250}}'/>
+  </view>
+</view>
+<view class='search-pannel' wx:if='{{searchPanelShow}}'>
+  <template is='movieGridTemplate' data='{{...searchResult}}'/>
+</view>

@@ -1,0 +1,13 @@
+<!--pages/stars/stars.wxml-->
+<template name='starsTemplate'>
+  <view class='stars-container'>
+    <view class='stars'>
+      <block wx:for='{{stars}}' wx:for-item='i' wx:key="{{index}}">
+        <image wx:if='{{i==1}}' src='/resources/images/icon/star-on.png'></image>
+        <image wx:elif='{{i==0.5}}' src='/resources/images/icon/star-half.png'></image>
+        <image wx:else src='/resources/images/icon/star-off.png'></image>
+      </block>
+    </view>
+    <text class='score'>{{score}}</text>
+  </view>
+</template>
