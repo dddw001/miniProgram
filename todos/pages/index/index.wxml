@@ -1,0 +1,12 @@
+<!--pages/index/index.wxml-->
+<view class='container'>
+  <view class='todo-head'>
+    <input class='todo-input' value='{{todo}}' bindconfirm='handleConfirm'/>
+  </view>
+  <view class='todo-list' wx:if='{{todoList.length>0}}'>
+    <view class='list-item' wx:for='{{todoList}}' wx:key='{{index}}'>
+      <text class='{{item.status}}'>{{item.text}}</text>
+      <icon type='clear' wx:if='{{item.status=="unfinished"}}' catchtap='handleFinish' data-index='{{index}}'></icon>
+    </view>
+  </view>
+</view>

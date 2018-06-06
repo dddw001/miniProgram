@@ -1,0 +1,8 @@
+/* pages/index/index.wxss */
+.todo-input{
+  padding: 10rpx 0;
+  border: 1px solid #bbb;
+}
+.finished{
+  text-decoration: line-through;
+}
